@@ -1,3 +1,4 @@
+'use client'; 
 import React from 'react'
 import {
   Card,
@@ -70,7 +71,7 @@ const Workflow = ({ description, id, name, publish }: Props) => {
         </Label>
         <Switch
           id="airplane-mode"
-          // onClick={onPublishFlow}
+          onClick={onPublishFlow}
           defaultChecked={publish!}
         />
       </div>
