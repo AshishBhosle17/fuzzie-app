@@ -15,13 +15,21 @@ const GoogleDriveFiles = (props: Props) => {
 
   const reqGoogle = async () => {
     setLoading(true)
-    const response = await axios.get('/api/drive-activity')
-    if (response) {
-      toast.message(response.data)
+    try {
+      const response = await axios.get('/api/drive-activity')
+      if (response) {
+        toast.message(response.data)
+        setIsListening(true)
+      }
+    } catch (error) {
+      if (axios.isAxiosError(error) && error.response?.status === 404) {
+        toast.error('Resource not found. Please check the endpoint.')
+      } else {
+        toast.error('An unexpected error occurred.')
+      }
+    } finally {
       setLoading(false)
-      setIsListening(true)
     }
-    setIsListening(false)
   }
 
   const onListener = async () => {
