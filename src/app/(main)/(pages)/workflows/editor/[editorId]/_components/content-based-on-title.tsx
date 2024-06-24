@@ -18,7 +18,6 @@ import ActionButton from './action-button'
 import { getFileMetaData } from '@/app/(main)/(pages)/connections/_actions/google-connection'
 import axios from 'axios'
 import { toast } from 'sonner'
-import { GoogleApis } from 'googleapis'
 
 export interface Option {
   value: string
@@ -55,23 +54,19 @@ const ContentBasedOnTitle = ({
 
   useEffect(() => {
     const reqGoogle = async () => {
-      try {
-        const response = await axios.get<GoogleApis>('/api/drive')
-        if (response.data && response.data.files) {
-          console.log(response.data.files[0])
-          toast.message("Fetched File")
-          setFile(response.data.files[0])
-        } else {
-          toast.error('No files found')
-        }
-      } catch (error) {
+      const response: { data: { message: { files: any } } } = await axios.get(
+        '/api/drive'
+      )
+      if (response) {
+        console.log(response.data.message.files[0])
+        toast.message("Fetched File")
+        setFile(response.data.message.files[0])
+      } else {
         toast.error('Something went wrong')
-        console.error('Error fetching files:', error)
       }
     }
-
     reqGoogle()
-  }, [setFile])
+  }, [])
 
   // @ts-ignore
   const nodeConnectionType: any = nodeConnection[nodeMapper[title]]
