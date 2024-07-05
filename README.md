@@ -1,36 +1,23 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Landing Page
 
-First, run the development server:
+![image](https://github.com/AshishBhosle17/fuzzie-app/assets/140106733/57b28eca-e5f2-489c-b5ad-8a9d202f907c)
+![image](https://github.com/AshishBhosle17/fuzzie-app/assets/140106733/f72a3205-3f46-46bf-bdf4-f42d4e413e4f)
+![image](https://github.com/AshishBhosle17/fuzzie-app/assets/140106733/6b725143-baa1-4184-8ceb-ef87e2004953)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Dashboard
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![image](https://github.com/AshishBhosle17/fuzzie-app/assets/140106733/044f1cf1-373e-4ce1-9120-280462fbb622)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Settings
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![image](https://github.com/AshishBhosle17/fuzzie-app/assets/140106733/fc085962-8644-4ada-9513-bb796f2ffb62)
 
-## Learn More
+## Connections
 
-To learn more about Next.js, take a look at the following resources:
+![image](https://github.com/AshishBhosle17/fuzzie-app/assets/140106733/935b8e47-e145-4d8d-a7e3-3692bfdc8387)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Workflows
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![image](https://github.com/AshishBhosle17/fuzzie-app/assets/140106733/0cdfb774-9bc5-4572-aa9a-2b9ee0c7ecfd)
